@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "rewrites": [
     { "source": "/territories", "destination": "/api/territories" },
     { "source": "/mentions", "destination": "/api/mentions" },
