@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
-  ],
   "routes": [
-    { "src": "/(.*)", "dest": "/server.js" }
+    { "src": "/mentions", "dest": "/api/mentions" },
+    { "src": "/alerts", "dest": "/api/alerts" },
+    { "src": "/narratives", "dest": "/api/narratives" },
+    { "src": "/sentiment_aggregates", "dest": "/api/sentiment_aggregates" },
+    { "src": "/territories", "dest": "/api/territories" },
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
