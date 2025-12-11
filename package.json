@@ -1,9 +1,12 @@
 {
-  "name": "mvp-radar-eleitoral",
-  "version": "1.0.0",
-  "main": "server.js",
-  "license": "MIT",
+  "name": "mvp-radar-eleitoral-proxy",
+  "version": "0.1.0",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
   "dependencies": {
-    "express": "4.18.2"
+    "express": "^4.18.2",
+    "serverless-http": "^3.0.0"
   }
 }
