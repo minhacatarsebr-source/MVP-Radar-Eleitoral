@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/mentions", "dest": "/api/mentions" },
-    { "src": "/alerts", "dest": "/api/alerts" },
-    { "src": "/narratives", "dest": "/api/narratives" },
-    { "src": "/sentiment_aggregates", "dest": "/api/sentiment_aggregates" },
-    { "src": "/territories", "dest": "/api/territories" },
-    { "src": "/(.*)", "dest": "/" }
-  ]
+  "functions": {
+    "api/index.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
 }
